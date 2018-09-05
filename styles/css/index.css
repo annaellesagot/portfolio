@@ -1,0 +1,258 @@
+body {
+  font-family: Calibri;
+  font-size: 18px;
+  color: white;
+  background-image: linear-gradient(grey, black);
+  line-height: 1.5; }
+  body .personal-info {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center; }
+    body .personal-info .goals {
+      display: none; }
+    @media (min-width: 768px) {
+      body .personal-info {
+        margin-top: 6%;
+        display: flex;
+        justify-content: space-evenly; }
+        body .personal-info .goals {
+          display: block; } }
+    body .personal-info .goals-title-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 10px; }
+      body .personal-info .goals-title-container:before {
+        content: '';
+        height: 1px;
+        background-color: grey;
+        width: 40%;
+        margin-right: 10px; }
+      body .personal-info .goals-title-container:after {
+        content: '';
+        height: 1px;
+        background-color: grey;
+        width: 40%;
+        margin-left: 10px; }
+      body .personal-info .goals-title-container .goals-title {
+        width: 20%;
+        font-size: 22px;
+        font-weight: bold; }
+    body .personal-info .description {
+      display: block;
+      width: 100%; }
+      @media (min-width: 768px) {
+        body .personal-info .description {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          width: 40%; } }
+      body .personal-info .description #about-me-title:after {
+        content: "";
+        display: inline-block;
+        height: 1em;
+        width: 3px;
+        background-color: #333333;
+        margin-left: 2px;
+        font-weight: normal;
+        position: relative;
+        top: 4px;
+        -webkit-animation: blinker steps(1) 1s infinite;
+        -o-animation: blinker steps(1) 1s infinite;
+        -moz-animation: blinker steps(1) 1s infinite;
+        animation: blinker steps(1) 1s infinite; }
+@-webkit-keyframes blinker {
+  0% {
+    visibility: visible; }
+  50% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
+@-moz-keyframes blinker {
+  0% {
+    visibility: visible; }
+  50% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
+@-o-keyframes blinker {
+  0% {
+    visibility: visible; }
+  50% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
+@keyframes blinker {
+  0% {
+    visibility: visible; }
+  50% {
+    visibility: hidden; }
+  100% {
+    visibility: visible; } }
+      body .personal-info .description .goals {
+        text-align: center;
+        margin-top: 20px; }
+        body .personal-info .description .goals img {
+          width: 73.5px;
+          height: 73.5px; }
+        body .personal-info .description .goals .goals-content {
+          display: flex; }
+        body .personal-info .description .goals .goal {
+          width: 50%; }
+    body .personal-info .summary {
+      text-align: center;
+      margin-top: 4%; }
+      body .personal-info .summary .profile-picture {
+        margin: 0 auto;
+        background-image: url(../../assets/profile-pic.jpg);
+        border-radius: 50%;
+        width: 210px;
+        height: 195px;
+        background-size: cover;
+        background-position-y: 28%;
+        margin-bottom: 20px; }
+      body .personal-info .summary .full-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+  body .title-full-width .title-container-full-width {
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 768px) {
+      body .title-full-width .title-container-full-width {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px; } }
+    body .title-full-width .title-container-full-width:before {
+      content: '';
+      height: 1px;
+      background-color: grey;
+      width: 25%;
+      margin-right: 10px; }
+    body .title-full-width .title-container-full-width:after {
+      content: '';
+      height: 1px;
+      background-color: grey;
+      width: 25%;
+      margin-left: 10px; }
+    body .title-full-width .title-container-full-width .title-text-full-width {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center; }
+      @media (min-width: 768px) {
+        body .title-full-width .title-container-full-width .title-text-full-width {
+          width: 24%; } }
+  body .title-full-width .flex-hobbies img {
+    width: 65px;
+    height: 65px; }
+  body .title-full-width .flex-hobbies .hobby-title {
+    margin-top: 5px; }
+  @media (min-width: 768px) {
+    body .formation .flex-formation .formation-xp {
+      width: 33%; } }
+  body .formation .flex-formation .formation-xp .xp-title {
+    margin: 0; }
+  body .formation .flex-formation .formation-xp .xp-place {
+    font-style: italic; }
+  body .flex-container {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      body .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 77%;
+        margin-top: 40px; } }
+  body h3 {
+    color: #80cbc4;
+    font-size: 24px; }
+  body h5, body p {
+    color: white; }
+  body .flex-experience {
+    flex-direction: column; }
+    body .flex-experience .experience-item {
+      margin: 0 auto; }
+      @media (min-width: 768px) {
+        body .flex-experience .experience-item {
+          width: 50%; } }
+    body .flex-experience .item-skills {
+      font-style: italic; }
+  body .flex-skill-item {
+    flex-direction: column; }
+  body .flex-skills h3 {
+    margin: 0;
+    color: white; }
+  @media (min-width: 768px) {
+    body .flex-skills .core-skills, body .flex-skills .added-skills {
+      width: 50%; } }
+  body .flex-skills .added-skills {
+    margin-top: 0; }
+    body .flex-skills .added-skills .additionnal-skills {
+      margin-bottom: 0; }
+    body .flex-skills .added-skills .languages-skills {
+      margin-top: 0; }
+  body .flex-skills .core-skills .label {
+    width: 74%;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      body .flex-skills .core-skills .label {
+        font-size: 18px;
+        width: auto; } }
+  body .flex-skills .skill h5, body .flex-skills .skill .progress {
+    display: inline-block; }
+  body .flex-skills .skill h5 {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    font-weight: lighter; }
+  body .flex-skills .skill .progress {
+    box-shadow: none;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background-color: #eee;
+    border-radius: 5px; }
+    body .flex-skills .skill .progress .progress-bar {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(60deg, #80cbc4, #3a667b, #80cbc4);
+      -webkit-animation: 50s progressbar infinite linear;
+      -moz-animation: 50s progressbar infinite linear;
+      -o-animation: 50s progressbar infinite linear;
+      -ms-animation: 10s progressbar infinite linear;
+      animation: 50s progressbar infinite linear;
+      border-radius: 5px; }
+      body .flex-skills .skill .progress .progress-bar.progress-98 {
+        width: 98%; }
+      body .flex-skills .skill .progress .progress-bar.progress-95 {
+        width: 95%; }
+      body .flex-skills .skill .progress .progress-bar.progress-80 {
+        width: 80%; }
+      body .flex-skills .skill .progress .progress-bar.progress-60 {
+        width: 60%; }
+      body .flex-skills .skill .progress .progress-bar.progress-50 {
+        width: 50%; }
+      body .flex-skills .skill .progress .progress-bar.progress-30 {
+        width: 30%; }
+      body .flex-skills .skill .progress .progress-bar.progress-20 {
+        width: 20%; }
+      body .flex-skills .skill .progress .progress-bar p {
+        position: absolute;
+        text-align: right;
+        right: 10px;
+        width: 100%;
+        top: -22px;
+        color: black;
+        font-weight: bold; }
+
+/*# sourceMappingURL=index.css.map */
