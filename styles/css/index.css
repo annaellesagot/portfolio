@@ -1,8 +1,30 @@
+header .nav-header {
+  position: fixed;
+  top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1;
+  box-shadow: 1px 4px #0e131245; }
+  header .nav-header a {
+    text-decoration: none;
+    color: white; }
+  @media (min-width: 768px) {
+    header .nav-header {
+      font-size: 22px; } }
+
 body {
+  margin: 0;
   font-family: Calibri;
   font-size: 18px;
   color: white;
-  background-image: linear-gradient(grey, black);
+  background-image: linear-gradient(#3c4565, black);
   line-height: 1.5; }
   body .personal-info {
     margin: 0 auto;
@@ -36,7 +58,7 @@ body {
         width: 40%;
         margin-left: 10px; }
       body .personal-info .goals-title-container .goals-title {
-        width: 20%;
+        width: 50%;
         font-size: 22px;
         font-weight: bold; }
     body .personal-info .description {
@@ -48,20 +70,25 @@ body {
           flex-direction: column;
           justify-content: space-evenly;
           width: 40%; } }
-      body .personal-info .description #about-me-title:after {
-        content: "";
-        display: inline-block;
-        height: 1em;
-        width: 3px;
-        background-color: #333333;
-        margin-left: 2px;
-        font-weight: normal;
-        position: relative;
-        top: 4px;
-        -webkit-animation: blinker steps(1) 1s infinite;
-        -o-animation: blinker steps(1) 1s infinite;
-        -moz-animation: blinker steps(1) 1s infinite;
-        animation: blinker steps(1) 1s infinite; }
+      body .personal-info .description #about-me-title {
+        margin-top: 55px; }
+        @media (min-width: 768px) {
+          body .personal-info .description #about-me-title {
+            margin-top: 0; } }
+        body .personal-info .description #about-me-title:after {
+          content: "";
+          display: inline-block;
+          height: 1em;
+          width: 3px;
+          background-color: #333333;
+          margin-left: 2px;
+          font-weight: normal;
+          position: relative;
+          top: 4px;
+          -webkit-animation: blinker steps(1) 1s infinite;
+          -o-animation: blinker steps(1) 1s infinite;
+          -moz-animation: blinker steps(1) 1s infinite;
+          animation: blinker steps(1) 1s infinite; }
 @-webkit-keyframes blinker {
   0% {
     visibility: visible; }
@@ -199,10 +226,16 @@ body {
     font-size: 14px;
     margin: 0 auto;
     margin-bottom: 20px; }
+    body .flex-skills .core-skills .label.label-desktop {
+      display: none; }
     @media (min-width: 768px) {
       body .flex-skills .core-skills .label {
         font-size: 18px;
-        width: auto; } }
+        width: auto; }
+        body .flex-skills .core-skills .label.label-desktop {
+          display: block; }
+        body .flex-skills .core-skills .label.label-mobile {
+          display: none; } }
   body .flex-skills .skill h5, body .flex-skills .skill .progress {
     display: inline-block; }
   body .flex-skills .skill h5 {
